@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>This is webservice is built upon T2O net</p>
+
+
+<p>
+  <a href="{% url 'model_form_upload' %}">Upload Image</a>
+</p>
+
+
+ <!--  <p>Uploaded files:</p>
+  <ul>
+    {% for obj in documents %}
+      <li>
+        <p>The request is: {{ obj.request }}</p>
+        <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+        <table border="1" style="table-layout: fixed;">
+          <tr>
+            <td halign="center" style="word-wrap: break-word;" valign="top">
+              <p>
+                <a href="{{ obj.document.url }}">
+                  <img src="{{ obj.document.url }}" style="width:256px">
+                </a><br>
+                <p>Upload</p>
+              </p>
+            </td>
+            <td halign="center" style="word-wrap: break-word;" valign="top">
+              <p>
+                <a href="{{ obj.inference }}">
+                  <img src="{{ obj.inference }}" style="width:256px">
+                </a><br>
+                <p>(Output )</p>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </li>
+    {% endfor %}
+  </ul> -->
+{% endblock %}

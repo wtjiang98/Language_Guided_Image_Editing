@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<P>Step 1: Type the editing request in the Request box, example: <b>lighten the image</b></P>
+<p>Step 2: Click on <b>Choose File</b> button to upload an image.</p>
+<p>Step 3: Check <b>ShowSequence</b> box if you want to see the EDITING SEQUENCE </p>
+<p>Step 4: Click on <b>Upload</b> button </p>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+
+
+{% if show_sequenece %}
+<p>The request is: <b>{{ query }}</b></p>
+<table border="1" style="table-layout: fixed;">
+  <tr>
+    <td halign="center" style="word-wrap: break-word;" valign="top">
+      <p>
+        <a href="{{ uploaded_file_url }}">
+          <img src="{{ uploaded_file_url }}" style="width:256px">
+        </a><br>
+        <p>Upload</p>
+      </p>
+    </td>
+    {% for op,obj in output_file_url_list %}
+      <td halign="center" style="word-wrap: break-word;" valign="top">
+        <p>
+          <a href="{{ obj }}">
+            <img src="{{ obj }}" style="width:256px">
+          </a><br>
+          <p>{{ op }}</p>
+          {% if forloop.last %}
+          <p>Editing RESULT</p>
+          {% else %}
+          {% endif %}
+          
+        </p>
+      </td>
+    {% endfor %}
+  </tr>
+</table>
+<p><a href="{% url 'model_form_upload' %}">Upload Another Image</a></p>
+
+ {% else %}
+
+ {% if uploaded_file_url  %}
+<p>The request is: <b>{{ query }}</b></p>
+ 	  <table border="1" style="table-layout: fixed;">
+      <tr>
+        <td halign="center" style="word-wrap: break-word;" valign="top">
+          <p>
+            <a href="{{ uploaded_file_url }}">
+              <img src="{{ uploaded_file_url }}" style="width:256px">
+            </a><br>
+            <p>Upload</p>
+          </p>
+        </td>
+        <td halign="center" style="word-wrap: break-word;" valign="top">
+          <p>
+            <a href="{{ output_file_url }}">
+              <img src="{{ output_file_url }}" style="width:256px">
+            </a><br>
+            <p>Output</p>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <p><a href="{% url 'model_form_upload' %}">Upload Another Image</a></p>
+    <!-- <p>File uploaded <a href="{{ uploaded_file_url }}"><img src="{{ uploaded_file_url }}" style="width:256px"> </a></p>
+    <p>Result <a href="{{ uploaded_file_url }}"><img src="{{ uploaded_file_url }}" style="width:256px"> </a></p> -->
+ {% endif %} 
+ {% endif %}
+  
+
+  <p><a href="{% url 'home' %}">Return to home</a></p>
+{% endblock %}
