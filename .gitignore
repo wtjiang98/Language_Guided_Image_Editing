@@ -1,7 +1,7 @@
 #LGIE/checkpoints/
 #results/
-#.idea/
-#*.tar.gz
-#*.zip
-#*.pkl
-#*.pyc
+.idea/
+*.tar.gz
+*.zip
+*.pkl
+*.pyc

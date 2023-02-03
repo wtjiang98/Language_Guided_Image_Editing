@@ -1,5 +1,5 @@
 
-# Language-Guided Image Editing (LGIE)
+# Language-Guided Global Image Editing via Cross-Modal Cyclic Mechanism (LGIE)
 
 ## Running Locally
 
