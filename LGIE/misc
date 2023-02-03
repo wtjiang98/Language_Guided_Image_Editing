@@ -1,0 +1,6 @@
+{'inpaint_obj': 1937, 'color_bg': 495, 'crop': 405, 'brightness': 3176, 'lightness': 2164, 'tint': 1832,
+ 'exposure': 85, 'radial_blur': 65, 'hue': 2059, 'saturation': 2812, 'contrast': 3118, 'sharpness': 842,
+  'gaussain_blur': 124, 'denoise': 155, 'dehaze': 133, 'deform_obj': 227, 'black&white': 72, 'rotate': 84,
+  'flip': 23, 'facet_blur': 19, 'flip_obj': 7, 'edge': 10, 'rotate_obj': 12}
+
+['crop', 'color_bg', 'black&white', 'rotate', 'flip', 'facet_blur', 'flip_obj', 'edge', 'rotate_obj']

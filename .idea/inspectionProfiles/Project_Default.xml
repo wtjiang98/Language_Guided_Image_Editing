@@ -1,0 +1,37 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="20">
+            <item index="0" class="java.lang.String" itemvalue="dill" />
+            <item index="1" class="java.lang.String" itemvalue="fastNLP" />
+            <item index="2" class="java.lang.String" itemvalue="dominate" />
+            <item index="3" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="4" class="java.lang.String" itemvalue="protobuf" />
+            <item index="5" class="java.lang.String" itemvalue="tensorboard" />
+            <item index="6" class="java.lang.String" itemvalue="tb-nightly" />
+            <item index="7" class="java.lang.String" itemvalue="future" />
+            <item index="8" class="java.lang.String" itemvalue="torch" />
+            <item index="9" class="java.lang.String" itemvalue="Pillow" />
+            <item index="10" class="java.lang.String" itemvalue="tqdm" />
+            <item index="11" class="java.lang.String" itemvalue="scipy" />
+            <item index="12" class="java.lang.String" itemvalue="six" />
+            <item index="13" class="java.lang.String" itemvalue="imageio" />
+            <item index="14" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="15" class="java.lang.String" itemvalue="tensorboardX" />
+            <item index="16" class="java.lang.String" itemvalue="pillow" />
+            <item index="17" class="java.lang.String" itemvalue="ddDjango" />
+            <item index="18" class="java.lang.String" itemvalue="opencv" />
+            <item index="19" class="java.lang.String" itemvalue="scikit-image" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+  </profile>
+</component>
